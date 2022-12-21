@@ -1,1 +1,210 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+.flex {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.dflex {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/* Color Styles */
+$white: rgb(255,255,255);
+$greydark: rgb(28,28,28);
+$greylight: rgb(48,48,48);
+$blue: rgb(2,130,249);
+
+
+
+.content{
+    background-color: $greydark;
+    color: $white;
+}
+
+.merch{
+    background-color: $blue;
+    color: $white;
+}
+img{
+    max-width: 100px;
+}
+
+section{
+    padding: 20px;
+}
+
+.flex {
+    display: flex;  
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+.flex-product{
+    display: flex;  
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+ul{
+
+    vertical-align: middle;
+
+    li{
+        list-style: none;
+        padding: 10px;
+    }
+
+    h4{
+        text-transform: uppercase;
+        padding: 3px;
+        font-size: 15px;
+    }
+
+
+
+    
+}
+
+
+.btn{
+        background-color: $blue;
+        text-align: center;
+        padding: 15px 50px;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+.row{
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        align-items: center;
+
+   }
+
+   .product{
+        margin-top: 30px;
+        width: calc(100%/6);
+       
+
+        h3{
+            margin-top: 5px;
+        }
+    }
+
+
+//Header
+
+
+    .flex {
+        display: flex;  
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        list-style: none;
+        margin:  1rem 4rem;
+
+            li a{
+                display: inline-block;
+                padding: 1rem;
+                text-decoration: none;
+                font-weight: 600;
+                color: $greydark;
+                text-transform: uppercase;
+
+                &.active,
+                &:hover{
+                    color: $blue;
+                }
+            }
+
+    }
+
+    //Footer
+    footer{
+        background-image: url(../assets/img/footer-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+
+        h3{
+            text-transform: uppercase;
+            padding: 1rem 0rem;
+        }
+
+        ul{
+            text-decoration: none;
+            list-style: none;
+        
+            li{
+            text-decoration: none;
+        }
+
+
+        li a{
+            color: grey;
+            text-decoration: none;
+            list-style: none;
+
+        }
+    }
+    }
+
+    .img-footer{
+        max-width: 300px;
+    }
+
+
+    .subfooter{
+        background-color: $greylight;
+
+        button{
+            border: 1px solid $blue;
+            padding: 1rem;
+            background-color: transparent;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        h4{
+            color: $white;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .hero{
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
